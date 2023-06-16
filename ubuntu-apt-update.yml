@@ -1,0 +1,8 @@
+---
+- hosts: ubuntu
+  become: yes
+  tasks:
+  - name: update the server
+    apt:
+      update_cache: yes
+      upgrade: 'yes'
